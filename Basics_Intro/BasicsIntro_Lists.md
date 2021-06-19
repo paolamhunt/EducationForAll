@@ -4,14 +4,16 @@
     - Declaring a list
     	- Items separated by commas enclosed within brackets \[ \]
     - Example:
-	    ~~~
+     ~~~
 	    thisList - [1,1,2.2, 'python']
-	    ~~~
+	~~~
     - Access list by referring to the index number or a range of items from a list
    
 - Python List Methods
+
 ![List Methods.](/Basics_Intro/images/list_methods.png "List Methods")
-    - Lists are mutable: the value of a list can be altered
+	
+- Lists are mutable: the value of a list can be altered
 
 ## PYTHON LIST METHODS EXAMPLES
 
