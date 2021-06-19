@@ -4,14 +4,13 @@
 
 ## Data Science Basics
 
-<ul> <h3><b> Contents </b></h3>
-  <li> Comments, Modules, Line Breaks </li>
-  <li> Variables </li>
-  <li> Arithmetic Operators </li>
-  <li> Numbers </li>
-  <li> Strings </li>
-  <li> Lists </li>
-  <li> Tuple </li>
-  <li> Sets </li>
-  <li> Dictionaries </li>
-  </ul>
+### Contents 
+- [Comments, Modules, Line Breaks](Basics_Intro1.md)
+- Variables 
+- Arithmetic Operators 
+- Numbers 
+- Strings 
+- Lists 
+- Tuple 
+- Sets 
+- Dictionaries 
