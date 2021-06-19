@@ -32,23 +32,24 @@ print(a[:2])
 ~~~
 
 ## Methods of Strings; Multiline Strings; Conversion
+
 - **Methods of Strings**
 	- Python has set of built-in methods for use:
-    		- `len(string_name)`: returns the length of a string
-    		- `lower()`: returns the string in lower case
-    		- `upper()`: returns the string in upper case
-        	- `replace()`: replaces a string with another string
-        	- `split(‘,’)`: splits the string into substrings if it finds instances of the separator ‘,’
-        	- `split(‘’)`: splits the string into substrings if it finds instances of a whitespace
-        	- `strip()`: removes any whitespace from the beginning or the end
-    	- Combine strings and numbers use: `format()` method
-        	- Takes arguments, formats them, and places them in string where place holders are { }
-        	- Example:
+		- `len(string_name)`: returns the length of a string
+		- `lower()`: returns the string in lower case
+		- `upper()`: returns the string in upper case
+		- `replace()`: replaces a string with another string
+		- `split(‘,’)`: splits the string into substrings if it finds instances of the separator ‘,’
+		- `split(‘’)`: splits the string into substrings if it finds instances of a whitespace
+		- `strip()`: removes any whitespace from the beginning or the end
+	- Combine strings and numbers use: `format()` method
+		- Takes arguments, formats them, and places them in string where place holders are { }
+		- Example:
 ~~~			
-			pop = 3.29e8
-			a = "United States Population in 2019 is {}"
-			print(a.format(pop))
-            		## United States Population in 2019 is 329000000.0
+		pop = 3.29e8
+		a = "United States Population in 2019 is {}"
+		print(a.format(pop))
+		## United States Population in 2019 is 329000000.0
 ~~~
 
 - **Multiline Strings**
