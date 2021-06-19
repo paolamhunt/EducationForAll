@@ -5,7 +5,7 @@
 ## Data Science Basics
 
 ### Contents 
-- [Comments, Modules, Line Breaks](Basics_Intro1.md)
+- [Comments, Modules, Line Breaks](/Basics_Intro/Basics_Intro1.md)
 - Variables 
 - Arithmetic Operators 
 - Numbers 
