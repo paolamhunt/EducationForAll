@@ -52,7 +52,15 @@ Data can be many different things, list, dictionary, and/or array
 ~~~
 	series1 = pd.Series([1, 3, 5, 7])
 	print(series1)
+<<<<<<< Updated upstream
     	## 0    1
+=======
+<<<<<<< HEAD
+	## 0    1
+=======
+    	## 0    1
+>>>>>>> 5bca22268744dc921c2ef56c4e82ca1b28bf0bba
+>>>>>>> Stashed changes
 	## 1    3
 	## 2    5
 	## 3    7
