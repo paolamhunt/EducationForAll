@@ -11,6 +11,7 @@
 - [Numbers](/Basics_Intro/BasicsIntro_Numbers.md) 
 - [Strings](/Basics_Intro/BasicsIntro_Strings.md) 
 - [Lists](/Basics_Intro/BasicsIntro_Lists.md) 
-- Tuple 
-- Sets 
-- Dictionaries 
+- [Tuples](/Basics_Intro/BasicsIntro_Tuples.md)
+- [Sets](/Basics_Intro/BasicsIntro_Sets.md) 
+- [Dictionaries](/Basics_Intro/BasicsIntro_Dict.md) 
+- [Series and Data Table Creation](/Basics_Intro/DataTables/Intro_DataFrames.md)
