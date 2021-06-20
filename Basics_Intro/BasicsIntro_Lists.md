@@ -1,11 +1,11 @@
 # Python List
 - List: ordered sequence of items
-    - Items in the lst DO NOT need to be the same type
+    - Items in the list DO NOT need to be the same type
     - Declaring a list
     	- Items separated by commas enclosed within brackets \[ \]
     - Example:
      ~~~
-	    thisList - [1,1,2.2, 'python']
+	    thisList = [1,1,2.2, 'python']
 	~~~
     - Access list by referring to the index number or a range of items from a list
    
@@ -20,9 +20,9 @@
 - Change List Item Value
 ~~~
     thislist = [1, 1, 2.2, 'python']
-    thislist[2] ="SQL'
-    print (Thislist)
-    ## [1,1,"SQL", "python]
+    thislist[2] = "SQL'
+    print(Thislist)
+    ## [1, 1, "SQL", "python"]
 ~~~
 	
 - Add List Item Value
@@ -30,15 +30,15 @@
     ~~~
     thisList = [1, 1, 2.2, "python"]
     thisList.append("SQL")
-    print (thisList)
+    print(thisList)
     ## [1, 1, 2.2, "SQL"]
     ~~~
 		
     - Use: `insert()` method to add item at the specified index
     ~~~
     thisList = [1, 1, 2.2, "python"]
-    thisList.insert(0, -5)   # insert n item in the first position
-    print (thisList)
+    thisList.insert(0, -5)   # insert item in the first position
+    print(thisList)
     ## [-5, 1, 2.2, "python"]
     ~~~
 	
@@ -47,7 +47,7 @@
    	 	```
 		thisList = [1, 1, 2.2, 'python']
 		thisList.remove('python')
-		print (thisList)
+		print(thisList)
 		## [1, 1, 2.2]
 		```
 		
@@ -55,12 +55,12 @@
     	~~~
 		thisList = [1, 1, 2.2, 'python']
 		thisList.pop()  #  remove the last item
-		Print (thisList)
+		print(thisList)
 		## [1, 1, 2.2]
 	
 		thisList = [1, 1, 2.2, 'python']
 		thisList.pop(0)  #  remove first item
-		Print (thisList)
+		print(thisList)
 		## [1, 2.2]
 		~~~
 	
@@ -68,26 +68,26 @@
     -  Use `Delete` method to delete items or lists
     	~~~
 		thisList = [1, 1, 2.2, 'python']
-		Del thisList[3]  # remove fourth item
-		Print (thisList)
-		## [1, 1, 2.2]
+		del thisList[3]  # remove fourth item
+		print(thisList)
+		##[1, 1, 2.2]
 
-		Del thisList # delete list completely
-		## print (thisList)
+		del thisList # delete list completely
+		print(thisList)
 		~~~
 		
     -  Sort List Item Values
    	-  The `sort()` method sorts list ascending by default. 
-            - Parameter reverse=True will list descending (default = reverse=False)
+            - Parameter `reverse = True` will list descending (default = reverse=False)
          ~~~
 		cars = ['Ford', 'BMW', 'Volvo']
 		cars.sort()  # sort cars items ascending
-		print (Cars)
+		print(cars)
 		## ['BMW', 'Ford', 'Volvo']
 		
 		cars = ['Ford', 'BMW', 'Volvo']
 		cars.sort(reverse=True)  #sort cars items descending
-		print (Cars)
+		print(cars)
 		## ['Volvo', 'Ford', 'BMW']
 		~~~
 		
@@ -104,7 +104,7 @@
      	-  Use `len()` method to determine how many items in a list
        ~~~
 		 cars = ['Ford', 'BMW', 'Volvo']
-		 print(len(Cars))
+		 print(len(cars))
 		 ## 3
 		 ~~~
 		
