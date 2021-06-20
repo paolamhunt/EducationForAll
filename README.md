@@ -4,6 +4,7 @@ This is my personal repo of notes and education materials that I have collected 
 "Education is too important to be left solely to the educators."
 
 Enjoy :sunflower:
+
 ---
 ## Data Science Basics
 
