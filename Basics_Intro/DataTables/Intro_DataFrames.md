@@ -1,4 +1,26 @@
 # Series and Data Table Creation
+**<u>In this Section</u>**
+- [How to Create Data Tables](#How-to-Create-Data-Tables)
+- [Intro to Series](#Intro-to-Seies)
+	- [What is Data?](#What-is-Data?)
+- [Intro to DataFrames](#Intro-to-DataFrame)
+	- [Importing and Exporting Data Tables](#Importing-and-Exporting-Data-Tables)
+	- [Head and Tail](#Head-and-Tail)
+	- [Length](#Length-of-a-DataFrame)
+	- [Shape](#Shape-of-a-DataFrame)
+	- [Transpose](#Transpose-of-a-DataFrame)
+	- [Index and Columns](#Index-and-Columns-of-a-DataFrame)
+	- [Selecting Data](#Selecting-Data)
+		- [Selecting Entire Rows or Columns](#Selecting-Entire-Rows-or-Columns)
+		- [Selecting by Labels](#Selecting-by-Labels)
+		- [Selecting by Positions](#Selecting-Data-by-Positions)
+		- [Selecting by Conditions](#Selecting-by-Conditions)
+	- [Droping and Filling Missing Values](#Dropping-and-Filling-Missing-Values)
+	- [Copying DataFrames](#Copying-Data)
+	- [Sorting Data by Columns](#Sorting-Data-by-Columns)
+	- [Adding and Dropping Columns](#Adding-and-Dropping-Columns)
+	- [Merging Data](#Merging-Data)
+	- [Grouping Data](#Grouping-Data)
 
 ## How to Create Data Tables 
 
@@ -206,7 +228,7 @@ To view a small sample of a Series or DataFrame object, use the `head()` and `ta
 	## 2020-01-04 -1.061140 -1.408500  0.839550 -0.099625
 ~~~
 
-#### Length of a Data Frame
+#### Length of a DataFrame
 It is similar with the length of a list. Use `len()` to find the number of rows in a data frame or a series.
 
 **Example - Length of a DataFrame**
@@ -217,7 +239,7 @@ It is similar with the length of a list. Use `len()` to find the number of rows 
     ## 2
 ~~~
 
-#### Shape of a Data Frame
+#### Shape of a DataFrame
 Shape gives the axis dimensions of the object.
     - Series: index (only axis) 
     - DataFrame: index (rows) and columns
@@ -228,7 +250,7 @@ Shape gives the axis dimensions of the object.
     ## (2, 3)
 ~~~
 
-#### Transpose of a Data Frame
+#### Transpose of a DataFrame
 Use `T` to get the transpose of a data frame. Here it is **T** not t.
 
 **Example - Transpose**
@@ -242,7 +264,7 @@ Use `T` to get the transpose of a data frame. Here it is **T** not t.
 	## Population  11190846  1409517397
 ~~~
 
-#### Index and Columns of a Data Frame
+#### Index and Columns of a DataFrame
 Use index to get the row labels of a data frame. Columns are used to find the columns labels.
 
 **Example - Index and Columns**
@@ -546,64 +568,70 @@ Pandas primarily uses the value np.nan to represent missing data. It is by defau
 	## 2020-01-05  0.0  0.0  0.0  0.0
 	## 2020-01-06  0.0  0.0  0.0  0.0
 ~~~
-Sorting Data by Columns
-Use sort_values() to sort a data frame by columns values ascending or decending.
-Example- Sorting Data by Columns
-
+### Sorting Data by Columns
+Use `sort_values()` to sort a data frame by columns values ascending or decending.
+**Example - Sorting Data by Columns**
+~~~
 	df7 = df.sort_values('A') 
 	# the default ascending=True
 	print(df7)
-##                    A         B         C         D
+	##                    A         B         C         D
 	## 2020-01-05 -1.736265 -0.307186 -0.080870  0.834319
 	## 2020-01-03 -1.217749 -1.428905 -0.170528  1.160940
 	## 2020-01-04 -1.061140 -1.408500  0.839550 -0.099625
 	## 2020-01-01 -0.377364  0.166759  0.682802  1.921379
 	## 2020-01-02 -0.197037 -0.759879 -2.089066 -0.036373
 	## 2020-01-06  1.885460  0.440898  0.439874  1.070767
-df8 = df.sort_values('A', ascending=False) 
+	
+	df8 = df.sort_values('A', ascending=False) 
 	print(df8)
-##                    A         B         C         D
+	##                    A         B         C         D
 	## 2020-01-06  1.885460  0.440898  0.439874  1.070767
 	## 2020-01-02 -0.197037 -0.759879 -2.089066 -0.036373
 	## 2020-01-01 -0.377364  0.166759  0.682802  1.921379
 	## 2020-01-04 -1.061140 -1.408500  0.839550 -0.099625
 	## 2020-01-03 -1.217749 -1.428905 -0.170528  1.160940
 	## 2020-01-05 -1.736265 -0.307186 -0.080870  0.834319
-df9 = df.sort_values(['A', 'C']) 
+	
+	df9 = df.sort_values(['A', 'C']) 
 	# sort data by two columns
 	print(df9)
-##                    A         B         C         D
+	##                    A         B         C         D
 	## 2020-01-05 -1.736265 -0.307186 -0.080870  0.834319
 	## 2020-01-03 -1.217749 -1.428905 -0.170528  1.160940
 	## 2020-01-04 -1.061140 -1.408500  0.839550 -0.099625
 	## 2020-01-01 -0.377364  0.166759  0.682802  1.921379
 	## 2020-01-02 -0.197037 -0.759879 -2.089066 -0.036373
 	## 2020-01-06  1.885460  0.440898  0.439874  1.070767
-Adding and Dropping Columns
-Example- Adding and Dropping Columns
+~~~
 
+#### Adding and Dropping Columns
+**Example - Adding and Dropping Columns**
+~~~
 	df['E'] = ['one', 'one', 'two', 'three', 'four', 'three']
 	# Adding a new Column to df
 	print(df)
-##                    A         B         C         D      E
+	##                    A         B         C         D      E
 	## 2020-01-01 -0.377364  0.166759  0.682802  1.921379    one
 	## 2020-01-02 -0.197037 -0.759879 -2.089066 -0.036373    one
 	## 2020-01-03 -1.217749 -1.428905 -0.170528  1.160940    two
 	## 2020-01-04 -1.061140 -1.408500  0.839550 -0.099625  three
 	## 2020-01-05 -1.736265 -0.307186 -0.080870  0.834319   four
 	## 2020-01-06  1.885460  0.440898  0.439874  1.070767  three
-df10 = df.drop('B', axis=1)
+	
+	df10 = df.drop('B', axis=1)
 	# drop column B
 	# axis=1 means to drop by column
 	# axis
 	print(df10)
-##                    A         C         D      E
+	##                    A         C         D      E
 	## 2020-01-01 -0.377364  0.682802  1.921379    one
 	## 2020-01-02 -0.197037 -2.089066 -0.036373    one
 	## 2020-01-03 -1.217749 -0.170528  1.160940    two
 	## 2020-01-04 -1.061140  0.839550 -0.099625  three
 	## 2020-01-05 -1.736265 -0.080870  0.834319   four
 	## 2020-01-06  1.885460  0.439874  1.070767  three
+~~~
 
 ### Merging Data
 Pandas provides various facilities for easily combining data. The `concat()` function does all of the heavy lifting of performing concatenation operations along an axis while performing optional set logic (union or intersection) of the indexes (if any) on the other axes. In this course we only talk about the simple merging rows or merging columns in the example. If you are interested, you may find [more merging methods](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#merging-concatenation).
