@@ -1,5 +1,5 @@
 # EducationForAll
-This is my personal repo of notes and education materials that I have collected over the years. All of the materials in this repo are done using Python.
+This is my personal repo of notes and education materials that I have collected over the years. All of the materials in this repo are done using Python.:snake:
 
 "Education is too important to be left solely to the educators."
 
