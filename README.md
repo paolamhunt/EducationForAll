@@ -20,3 +20,4 @@ Enjoy :sunflower:
 - [Dictionaries](/Basics_Intro/BasicsIntro_Dict.md) 
 - [Series and Data Table Creation](/Basics_Intro/DataTables/Intro_DataFrames.md)
 - [Data Visualization with Matplotlib](/Basics_Intro/Visualization/Intro_Vis.md)
+- [Functions](/Basics_Intro/Intro_Functions.md)
