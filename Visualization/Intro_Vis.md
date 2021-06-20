@@ -370,6 +370,6 @@ plt.show()
 plt.close()
 ~~~
 
-**<u>NOTE!</u>** use 'plt.close()' to close the current figure, use 'plt.close(all)' to close all figures. 
+**<u>NOTE!</u>** use `plt.close()` to close the current figure, use `plt.close(all)` to close all figures. 
 
 [Back to Top](#In-this-Section)
